@@ -15,7 +15,7 @@ export default class MyStore extends Reflux.Store {
 	}
 
 	onGetWeather() {
-		let url = "http://api.openweathermap.org/data/2.5/weather?id=625144&appid=468c8d57ebb44cc2e9adb6ec9fe5cb07";
+		let url = "https://api.openweathermap.org/data/2.5/weather?id=625144&appid=468c8d57ebb44cc2e9adb6ec9fe5cb07";
 		myFetch.myGet(url).then(result => {
 			console.log(result);
 			this.setState({currenWeatherObj: result})
@@ -23,7 +23,7 @@ export default class MyStore extends Reflux.Store {
 	}
 
 	onGetForecastWeather() {
-		let url = "http://api.openweathermap.org/data/2.5/forecast?id=625144&appid=468c8d57ebb44cc2e9adb6ec9fe5cb07";
+		let url = "https://api.openweathermap.org/data/2.5/forecast?id=625144&appid=468c8d57ebb44cc2e9adb6ec9fe5cb07";
 		myFetch.myGet(url).then(result => {
 			console.log(result);
 			this.setState({forecastWeatherObj: result})
