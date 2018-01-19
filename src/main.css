@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+html, body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+.wrapper {
+	margin: 20px auto;
+	width: 320px;
+	height: 515px;
+	position: relative;
+}
+ul {
+	list-style: none;
+}
+p, h1, h2, h3, span {
+	margin:  0;
+	padding: 0;
+}
+
+/*curentWeather*/
+.curentWeather {
+	width: 100%;
+	height: 260px;
+	background: #50cd72;	
+}
+.curentWeather .city {
+	padding: 10px;
+}
+.curentWeather .city h1 {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 20px;
+	color: #ffffff;
+}
+.curentWeather .city p {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.curentWeather .temp {
+	margin-top: 40px;
+    padding: 0 92px;
+}
+.curentWeather .temp img {
+	margin-left: 30px;
+	height: 50px;
+	width: 50px;
+}
+.curentWeather .temp h2 {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 30px;
+	color: #ffffff;
+}
+.curentWeather .temp p {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.curentWeather .wind {
+	margin-top: 20px;
+	padding: 0 20px 0 20px;
+}
+.curentWeather .wind p {
+	display: inline-block;
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 16px;
+	color: #ffffff;
+}
+.curentWeather .wind .windDirection {
+	padding-right: 100px;
+}
+.curentWeather .wind .windDirection::before {
+	content: url(icons/dir.png);
+	padding-right: 10px;
+}
+.curentWeather .wind .windSpeed::before {
+	content: url(icons/wind.png);
+	padding-right: 10px;
+}
+/*fiveDayForecast*/
+.fiveDayForecast {
+	width: 100%;
+	height: 255px;
+	background: #e7e7e8;
+}
+.fiveDayForecast ul {
+	margin: 0;
+	padding: 0 10px 0 10px;
+}
+.fiveDayForecast ul:last-child li {
+	border: none;
+}
+.fiveDayForecast ul li {
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+.fiveDayForecast ul li p {
+	font-family: "Roboto";
+	padding-top: 15px;
+}
+.fiveDayForecast ul li p:nth-child(1) {
+	float: left;
+    padding-right: 20px;
+    width: 140px;
+    overflow: hidden;
+}
+.fiveDayForecast ul li p:nth-child(3) {
+	float: right;
+}
+
+.box {
+	/*width: 500px;*/
+	height: 320px;
+	background: lightgrey;
+	margin: auto;
+}
+button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
