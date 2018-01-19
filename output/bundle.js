@@ -5897,7 +5897,7 @@ var MyStore = function (_Reflux$Store) {
 		value: function onGetWeather() {
 			var _this2 = this;
 
-			var url = "http://api.openweathermap.org/data/2.5/weather?id=625144&appid=468c8d57ebb44cc2e9adb6ec9fe5cb07";
+			var url = "https://api.openweathermap.org/data/2.5/weather?id=625144&appid=468c8d57ebb44cc2e9adb6ec9fe5cb07";
 			_myfetch2.default.myGet(url).then(function (result) {
 				console.log(result);
 				_this2.setState({ currenWeatherObj: result });
@@ -5908,7 +5908,7 @@ var MyStore = function (_Reflux$Store) {
 		value: function onGetForecastWeather() {
 			var _this3 = this;
 
-			var url = "http://api.openweathermap.org/data/2.5/forecast?id=625144&appid=468c8d57ebb44cc2e9adb6ec9fe5cb07";
+			var url = "https://api.openweathermap.org/data/2.5/forecast?id=625144&appid=468c8d57ebb44cc2e9adb6ec9fe5cb07";
 			_myfetch2.default.myGet(url).then(function (result) {
 				console.log(result);
 				_this3.setState({ forecastWeatherObj: result });
@@ -12760,7 +12760,7 @@ var WeatherWidget = function (_Reflux$Component) {
 					/*<div>
      	<CurrentWeather />
      	<Forecast />			
-     </div>*/
+     </div> */
 
 					_react2.default.createElement(
 						_reactRouterDom.BrowserRouter,
